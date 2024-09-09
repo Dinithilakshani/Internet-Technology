@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       h2{
+            color: blueviolet;
+        }
+        .Text{
+            color: rgb(230, 154, 32);}
+
+           .heading{
+                color: blue;
+           }
+            id selector
+       #main-paragragh{
+                    color: red;
+                } 
+      Attribute selector*/
+       a[target ="_blank"]{
+                color: aqua;
+                
+            }
+            Descendant selector*/
+       div  p{
+                font-style: italic;
+            } 
+
+      child selector
+       ul>li{
+                list-style-type:circle;
+                color: rgb(96, 28, 159);
+            } 
+      Adjacent selector
+       h2 +p{
+                color: deeppink;
+            } 
+      h1 ~p{
+                color: rgb(212, 21, 47);
+            } 
+      /* pseudo class*/
+      /* li:first-child{
+                color: magenta;
+             }
+             li:last-child{
+                color: navy;
+             } */
+      /* li:nth-child(odd) {
+        color: dodgerblue;
+      }
+      li:nth-child(even) {
+        color: maroon;
+      } */
+      ul:hover {
+        background-color: yellowgreen;
+      }
+      p:hover {
+        color: blue;
+      }
+      /* pseudo element*/
+      p::first-letter {
+        color: brown;
+        font-size: 40px;
+      }
+      p::first-line {
+        color: red;
+      }
+      p::before {
+        content: "Before";
+        color: fuchsia;
+      }
+      p::after {
+        content: "After";
+        color: aqua;}
+
+        /*grouping selector*/
+        h1,
+        h2,
+        h3{
+            color: aquamarine;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+    targets all instance of a specific HTML element <br />
+    <hr />
+    ===01.Element Selector===
+    <h2>Hello World</h2>
+    <h3>hello</h3>
+    <h2>llaa</h2>
+    <hr />
+    ===02.Class Selector===
+
+    <p class="Text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae sequi
+      similique commodi distinctio laboriosam, assumenda magnam odio adipisci?
+      Soluta vitae nam aspernatur temporibus, nobis doloribus facere in
+      perferendis necessitatibus?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet
+      <span class="Text">consectetur adipisicing elit</span>. Cum praesentium
+      dignissimos sit nostrum fugiat, corrupti maiores at distinctio voluptate,
+      quod impedit cupiditate cumque reiciendis facere saepe sequi nam quas
+      accusamus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum praesentium
+      dignissimos sit nostrum fugiat, corrupti maiores at distinctio voluptate,
+      quod impedit cupiditate cumque reiciendis facere saepe sequi nam quas
+      accusamus.
+    </p>
+
+    <h1 class="heading">Dinu</h1>
+    <h2 class="heading">Dinu</h2>
+    <h3 class="heading">Dinu</h3>
+    <h4 class="heading">Dinu</h4>
+    <h5 class="heading">Dinu</h5>
+    <h6 class="heading">Dinu</h6>
+    <hr />
+    ===03. ID Selectors===
+    <p id="main-paragragh">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum atque
+      maxime corrupti vel repellendus numquam facere illo repudiandae ex
+      suscipit nihil ea soluta, non quae libero consectetur reiciendis inventore
+      dicta?
+    </p>
+    <h4 id="main-paragragh">hii</h4>
+
+    <hr />
+    ===04.Attribute Selector=== <br />
+    <a href="hpps://www.google.com" target="_blank">google</a><br />
+    <hr />
+    ===05.Descendant Selector===
+    <p>hii</p>
+    <div>
+      <p>One</p>
+      <p>two</p>
+      <p>three</p>
+    </div>
+    <br />
+    <hr />
+    ===06. Chaild Selector===
+    <ul>
+      <li>java</li>
+      <li>javaSript</li>
+      <li>Paython</li>
+    </ul>
+    <br />
+    <hr />
+    ===07.Adjacent sibling Selector (+)===
+    <h2>adjacent</h2>
+    <p>hello 01</p>
+    <p>hello 02</p>
+    <br />
+    <hr />
+    ===08.General sibling selector (~)===
+    <h1>Main Headding</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, veritatis
+      nostrum necessitatibus a eligendi assumenda consectetur alias tenetur ab
+      optio expedita autem, non quis adipisci repellendus aspernatur. Corporis,
+      vel nihil!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, veritatis
+      nostrum necessitatibus a eligendi assumenda consectetur alias tenetur ab
+      optio expedita autem, non quis adipisci repellendus aspernatur. Corporis,
+      vel nihil!
+    </p>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, veritatis
+        nostrum necessitatibus a eligendi assumenda consectetur alias tenetur ab
+        optio expedita autem, non quis adipisci repellendus aspernatur.
+        Corporis, vel nihil!
+      </p>
+    </div>
+    <br />
+    <hr />
+    ===09.pseudo-class Selector===
+    <br />
+    <ul>
+      <li>java</li>
+      <li>javaSript</li>
+      <li>Paython</li>
+      <li>Django</li>
+    </ul>
+    <br><hr>
+    ===10.Pseudo Element Selector===
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi totam
+      enim voluptatum eum quis temporibus illum dolorem reprehenderit distinctio
+      in aliquid ad, nihil exercitationem nobis laborum expedita quibusdam
+      excepturi iusto?
+    </p>
+    <br><br>
+===11.Grouping Selector===
+<h1>Helloooooo</h1>
+<h2>helloooo</h2>
+<h3>Helooooo</h3>
+  </body>
+</html>

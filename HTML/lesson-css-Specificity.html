@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+<style>
+    #main-content{
+        background-color: rgb(163, 226, 240);
+    }
+    p{
+        background-color: blue;
+    }
+    .content{
+       background-color: aquamarine;
+    }
+    div p{
+        background-color: bisque;
+    }
+    div.content{
+        background-color: darkgoldenrod;
+    }
+    #card #main-content{
+        background-color: cornflowerblue;
+
+    }
+    div.main-content{
+        background-color: darkolivegreen;
+    }
+</style>
+</head>
+<body>
+    <div class="card-container" id ="card">
+    <p class="content" id="main-content" style="background-color: chartreuse;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ad delectus dolore. Recusandae, similique hic laudantium architecto fugit est, iste laboriosam natus facilis accusantium culpa tempore illum, aliquid unde minus.
+    </p>
+</div>
+</body>
+</html>
