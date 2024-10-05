@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-12</title>
+    <style>
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .circle {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        margin-left: 20px;
+      }
+
+      .circle1 {
+        animation: up-down-circle1 2s linear infinite 0s;
+      }
+
+      @keyframes up-down-circle1 {
+        0% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-100px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      .circle2 {
+        animation: up-down-circle2 2s linear infinite 0.3s;
+      }
+
+      @keyframes up-down-circle2 {
+        0% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-100px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .circle3 {
+        animation: up-down-circle3 2s linear infinite 0.6s;
+      }
+
+      @keyframes up-down-circle3 {
+        0% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-100px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .circle4 {
+        animation: up-down-circle4 2s linear infinite 0.9s;
+      }
+
+      @keyframes up-down-circle4 {
+        0% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-100px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .circle5 {
+        animation: up-down-circle5 2s linear infinite 1.2s;
+      }
+
+      @keyframes up-down-circle5 {
+        0% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-100px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+      <div class="circle circle3"></div>
+      <div class="circle circle4"></div>
+      <div class="circle circle5"></div>
+    </div>
+  </body>
+</html>

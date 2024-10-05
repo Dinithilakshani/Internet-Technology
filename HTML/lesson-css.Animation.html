@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        body{
+            margin: 0;
+
+        }
+        .box{
+            /* width: 200px;
+            height: 200px;
+            background-color: aquamarine; */
+            /* animation-name: up-down;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: 2;
+            animation-delay: 0s; */
+
+            /* animation: up-down 2s linear infinite 0s; */
+            animation: sqaure 2s linear infinite 0s;
+        }
+        /* @keyframes up-down {
+            0%{
+                transform: translate(0);
+            }
+            50%{
+                transform: translateY(500px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+            
+        } */
+
+        /* @keyframes sqaure{
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: darkmagenta;
+            }
+            
+        } */
+        .box2{
+width: 100PX;
+height: 100PX;
+background-color: antiquewhite;
+animation: round 2s linear infinite 0s;
+        }
+        @keyframes round {
+            0%{
+                transform: translateY(0);
+            }
+            25%{
+                transform: translateY(0) translateX(200PX);
+            }
+            50%{
+               transform: translateX(200px) translateY(200PX ); 
+            }
+            75%{
+                transform: translateX(0) translateY(200PX);
+            }
+            100%{
+               transform: translateY(0); 
+
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        <div class="box box2"></div>
+    </div>
+</body>
+</html>
