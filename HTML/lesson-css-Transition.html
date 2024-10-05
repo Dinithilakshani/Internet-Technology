@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson-CSS-Transitions</title>
+    <style>
+      button {
+        background-color: rgb(46, 202, 207);
+        color: rgb(255, 255, 255);
+        width: 400px;
+        height: 100px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background-color: rgb(199, 27, 27);
+        color: white;
+        cursor: pointer;
+
+        /* transition-property: background-color;
+        transition-duration: 3s;
+        transition-timing-function: ease-in;
+        transition-delay: 2s; */
+
+        transition: background-color 3s ease-in-out 2s;
+      }
+
+      /* .image-container {
+        width: 200px;
+        height: 200px;
+        margin: 50px;
+      }
+
+      .image-container:hover img {
+        transform: scale(2) rotate(360deg);
+        width: 100%;
+      }
+
+      .image {
+        width: 100%;
+      } */
+      .circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transition: transform 3s ease-in-out 2s ;
+      }
+      .circle:hover{
+        transform: translateX(150px);
+        background-color: aqua;
+      }
+
+    </style>
+  </head>
+  <body>
+    <button>Add To Cart</button>
+
+    <br />
+    ===================================================================================================================================================================
+
+    <br />
+
+    <div class="image-container">
+      <div class="image">
+        <img
+          src="/image/rose.webp"
+          alt="image"
+          style="width: 500px; height: 500px"
+        />
+      </div>
+    </div>
+======================================================================
+    <div class="Circle"></div>
+  </body>
+</html>
