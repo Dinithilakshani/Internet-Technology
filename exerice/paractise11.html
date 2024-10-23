@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+      
+.icon-text-div {
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo-div {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid white;
+      }
+      #logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .nav-container > ul {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .nav-container > ul > li,
+      a {
+        display: inline-block;
+        margin: 0 10px;
+        list-style: none;
+        text-decoration: none;
+        color: whitesmoke;
+      }
+      .header-container {
+        background-color: rgb(14, 14, 49);
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .burger {
+        display: none;
+        cursor: pointer;
+        font-size: xx-large;
+      }
+
+.menu-panel {
+        background-color: rgb(14, 14, 49);
+        color: white;
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: right 0.5s ease-in-out;
+      }
+      .menu-panel ul {
+        list-style: none;
+        padding: 50px 20px;
+      }
+      .menu-panel ul li {
+        margin-bottom: 20px;
+      }
+      .menu-panel ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+      .close-btn {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+      }
+
+@media screen and (max-width: 575px) {
+        .nav-container > ul {
+          display: none;
+        }
+        #logo-text {
+          display: none;
+        }
+        .burger {
+          display: block;
+          font-size: larger;
+          margin-right: 16px;
+        }
+        main {
+          flex-direction: column-reverse;
+          width: 100%;
+        }
+        .hero-img {
+          width: 100%;
+          padding: 0;
+        }
+        /* #content-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        } */
+        .hero-content {
+          width: 100vw;
+          padding: 0;
+        }
+        .menu-panel.active {
+          right: 0;
+        }
+}
+
+
+
+
+
+
+
+
+        #imge  {
+            width: 50%;
+            margin-left: 50%;
+            margin-top: -9%;
+            height: 500px;
+            width: 700px;
+            border-radius: 30px;
+        }  
+            
+        .topic{
+            width: 50%;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+  
+
+}
+        p{
+            text-align: center;
+        }
+        button{
+            background-color: black;
+            color: white;
+            width: 35%;
+            border-radius: 20px;
+            padding: 12px 24px;
+        }
+        .details{
+            margin-top: 100px;
+            padding: 0 40px;
+            font-size: 1.2rem;
+        }
+        .text2{
+            justify-content: center;
+            display: flex;
+            font-size: 2rem;
+        }
+       .box{
+        display: flex;
+        width: 400px;
+        height: 400px;
+        background-color: aqua;
+       }
+       .container{
+        display: flex;
+        column-gap: 20px;
+       }
+        
+    </style>
+</head>
+<body>
+    <header>
+<div class="header">
+        <img id="home" src="/image/IMG-20240212-WA0046.jpg" alt="">
+        <h1>Dinithi Palliyaguru</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Service">Service</a></li>
+            </ul>
+        </nav>
+              <img id="bugger-button" src="/image/menu-bar.png" alt="">
+   
+    </div>
+
+
+    </header>
+
+    class="manu-panel">
+      <button class="close-btn" id="btn-close">&times;</button>
+      <ul>
+        <li>
+          <a class="link" href="/exercise/practical-10.html">practical-10</a>
+        </li>
+        <li>
+          <a class="link" href="/exercise/practical-9.html">practical-9</a>
+        </li>
+        <li>
+          <a class="link" href="/exercise/practical-9.html">practical-9</a>
+
+    
+ 
+    <div class="topic">
+        <div class="details">
+         <h1>About them ..</h1>
+         <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet obcaecati eveniet, voluptatum ducimus velit nesciunt dolorum quod accusamus possimus nostrum assumenda rerum eligendi repellendus similique est repellat eos dignissimos?
+         </p>
+         <button>Download cv</button><br><br>
+     </div>
+     <div class="social">
+        <!-- <a href=""><img id src="/image/fbb.png" alt=""></a> -->
+        
+     </div>
+     
+ </div>
+     <img id="imge" src="/image/IMG-20240212-WA0046.jpg" alt="">
+
+     <section class="home2">
+        <div class="text2">
+        <h1 style=" color: blue;">My project</h1>
+    </div>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+     </section>
+
+     <script>
+        const burger = document.getElementById("burger");
+        const menupanel = document.getElementById("menu-panel-id");
+        const closeBtn = document.getElementById("btn-close");
+
+        burger.addEventListener("click",()=> {
+            manupanel.classList.toggle("active");
+        })
+        closeBtn.addEventListener("click" ,() =>
+    manupanel.classList.remove("active")
+    );
+     </script>
+</body>
+</html>

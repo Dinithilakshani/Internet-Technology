@@ -1,129 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercise 4</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-      body {
-        margin: 0;
-        background-color: white;
-      }
-      header {
-        width: 100vw;
-        height: 20vh;
-        background-color: black;
-        position: sticky;
-        top: 0;
-        display: flex;
-      }
+body{
+    margin: 10px;
+    
+  
+}
+#homeimg{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-top: 10px;
+}
 
-      .container {
-        font-family: sans-serif;
-      }
-      header h1 {
-        color: rgb(255, 255, 255);
-        font-size: 25px;
-      }
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    
+}
+.header1{
+    display: flex;
+}
+.box{
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+}
 
-      header nav ul {
-        list-style: none;
-        display: flex;
-      }
-      header nav ul li a {
-        text-decoration: none;
-        justify-content: end;
-        color: white;
-      }
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 40px;
 
-      header nav a {
-        margin-left: 10px;
-        justify-content: start;
-      }
+}
+nav ul li a{
+text-decoration: none;
+color: white;
+}
 
-      .container {
-        display: flex;
-      }
+#imge{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -25%;
+    height: 700px;
+    width: 700px;
+}
+.topic{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
 
-      .container p {
-        color: white;
-        text-align: center;
-      }
-      .container .right-box {
-        width: 50%;
-        height: auto;
-        border: 1px solid;
-      }
+}
+p{
+    text-align: center;
+}
+button{
+    background-color: black;
+    color: white;
+    width: 35%;
+    border-radius: 20px;
+    padding: 12px 24px;
+}
+.details{
+    margin-top: 80px;
 
-      .container .left-box {
-        width: 50%;
-        height: auto;
-        border: 1px solid;
-        padding: 100px;
-        flex-direction: column;
-        justify-content: center;
-        
-
-      }
-
-      .container .left-box button {
-        align-content: center;
-
-      }
-
-      .container .right-box .social-media {
-        display: flex;
-        justify-content: center;
-        color: rgb(7, 1, 1);
-       
-      }
-     
+}
+#social{
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <img
-        src="/image/IMG-20240212-WA0046.jpg"
-        alt="profile-pic"
-        style="height: 18vh; width: 8vw; border-radius: 100%"
-      />
-
-      <h1>Dinithi Palliyaguru</h1>
-
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#service">Service</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="container">
-      <div class="left-box">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab dolores praesentium, aut, odio fugit rerum iure voluptatem sunt pariatur officiis nemo adipisci, ipsum consequatur quos temporibus eligendi porro fuga?
-        </p>
-        <button>more about</button>
-        <div class="social-media">
-            <div><a href="">Facebook</a></div>
-            <div><a href="">Linkendin</a></div>
-            <div><a href="">Github</a></div>
-            <div><a href="">Instagram</a></div>
-          </div>
-      </div>
-      <div class="right-box">
-        <img
-          src="/image/IMG-20240212-WA0046.jpg"
-          alt="right-photo"
-          style="width: 40vw; height: auto"
-        />
-
-        
-      </div>
-
-     
+        <div class="header1">
+        <img id="homeimg" src="/assest/image/12db7367-d638-4ab7-8f3a-5e7c41ec1a12.jpg" alt="">
+        <h1>Dinithi Palliyaguru</h1>
     </div>
-  </body>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="topic">
+       <div class="details">
+        <h1>About them ..</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet obcaecati eveniet, voluptatum ducimus velit nesciunt dolorum quod accusamus possimus nostrum assumenda rerum eligendi repellendus similique est repellat eos dignissimos?
+        </p>
+        <button>Download cv</button><br><br>
+    </div>
+    <div id="social">
+        <div class="socialimg"></div>
+        <a href="https://www.facebook.com"> <img src="/assest/image/face.png " style="width: 50px; height: 50px;" alt=""></a>
+       <img src="/assest/education.jpg" style="width: 50px; height: 50px;" alt="">
+    </div>
+</div>
+    <img id="imge" src="/assest/image/12db7367-d638-4ab7-8f3a-5e7c41ec1a12.jpg" alt="">
+</body>
 </html>

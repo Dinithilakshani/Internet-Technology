@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            color:white                                             ;
+        }
+        .container{
+            justify-content: center;
+            display: flex;
+            align-content: center;
+            margin-top: 30px;
+        }
+        .box{
+            width: 700px;
+            height: 700px;
+            box-shadow: 1px 4px 16px black;
+            border-radius: 20px;
+            background-color: rgb(61, 78, 91);
+            padding: 20px 20px;
+            
+        }
+        .details{
+            
+            text-align: center;
+        
+        }
+        #button{
+            background-color: black;
+            color: white;
+            width: 650px;
+            height: 50px;
+            font-size: 1.2rem;
+            border: none;
+            border: 40px;
+
+        }
+
+        .bar{
+            width: 500px;
+            height: 50px;
+            border-radius: 10px;
+        }
+        #message{
+            width: 600px;
+            height: 200px;
+            border-radius: 20px;
+        }
+
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <div class="box">
+        <div class="details">
+        <h1 >Contact us</h1>
+        <h2>If you need ane help, please let us know...!!!!</h2>
+         <br><br>
+        </div>
+<div class="text">
+    <label for="Name">Name:</label><br><br>
+        <input type="text" id="Name" class="bar"><br><br>
+
+        <label for="Email">Email</label><br><br>
+        <input type="text" id="Email" class="bar"><br><br>
+
+        <label for="Message">Message</label><br><br>
+        <textarea name="Messagess" id="message"  ></textarea><br><br>
+    </div>
+    <button id="button">Submit</button>
+    </div>
+    </div>
+</body>
+</html>
