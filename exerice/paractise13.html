@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            column-gap: 40px;
+        }
+        .box{ 
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        display: inline-block;
+        margin: 8px;
+
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+        <script>
+            let boxes = document.querySelectorAll(".box");
+console.log(boxes);
+let currentIndex = 0;
+let nextIndex = 4;
+function changeColor() {
+  boxes.forEach((box) => {
+    box.style.backgroundColor = "gray";
+  });
+
+  boxes[currentIndex].style.backgroundColor = "red";
+  
+  boxes[nextIndex].style.backgroundColor = "yellow";
+
+  currentIndex = (currentIndex + 1) % boxes.length;
+  nextIndex = (nextIndex + 1) % boxes.length;
+}
+setInterval(changeColor, 1000);
+        </script>
+          
+
+    </div>
+</body>
+</html>
